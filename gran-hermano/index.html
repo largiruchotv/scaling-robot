@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html lang="es" >
 
@@ -7,109 +8,9 @@
   <meta charset="UTF-8">
   <title>Largirucho TV</title>
 <style>
-.c {
-  position: relative;
-  width: 90vmin;
-  height: calc(90vmin * 9 / 16);
-  margin: auto;
-  overflow: hidden;
-  box-shadow: 0 1.25em 1em -0.5em #0005;
-}
-
-.i {
-  width: 100%;
-  height: 100%;
-  background-color: #000;
-}
-
-.img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
-  -o-object-position: 0% 50%;
-     object-position: 0% 50%;
-  transition: transform 1s;
-}
-.c:hover .img {
-  transform: translateX(-3%);
-  transition-duration: 5s;
-}
-
-:root {
-  --s1-w: 40vmin;
-  --s2-w: 60vmin;
-  --s3-w: 10vmin;
-}
-
-@-webkit-keyframes move-x {
-  50% {
-    transform: translateX(var(--x1));
-  }
-  100% {
-    transform: translateX(var(--x2));
-  }
-}
-
-@keyframes move-x {
-  50% {
-    transform: translateX(var(--x1));
-  }
-  100% {
-    transform: translateX(var(--x2));
-  }
-}
-.s1,
-.s2,
-.s3 {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  -webkit-animation: gg 0.5s ease-out forwards;
-          animation: gg 0.5s ease-out forwards;
-  pointer-events: none;
-}
-.c:hover .s1,
-.c:hover .s2,
-.c:hover .s3 {
-  -webkit-animation-name: move-x;
-          animation-name: move-x;
-}
-
-.s1 {
-  left: 100%;
-  z-index: 1;
-  width: var(--s1-w);
-  background-color: #fff;
-  mix-blend-mode: difference;
-  --x1: -110vmin;
-  --x2: -50vmin;
-}
-
-.s2 {
-  z-index: 2;
-  width: calc(var(--s2-w) * 2);
-  left: calc(100% + var(--s1-w));
-  background-color: #000;
-  --x1: -110vmin;
-  --x2: -90vmin;
-}
-
-.s3 {
-  z-index: 2;
-  width: 10vmin;
-  right: 100%;
-  background-color: #000;
-  -webkit-animation-delay: 0.1s;
-          animation-delay: 0.1s;
-  --x1: 0;
-  --x2: 95%;
-}
 
 body {
 
-  background: #333;
-  color: #cca;
 }
 
 h1 {
@@ -118,18 +19,11 @@ h1 {
 
 
         .content, .sidebar {
-  margin: 10px;
+  margin: -15px;
   padding: 20px;
 }
 
-.content {
-  //background-color: navy;
-  //color: white;
-}
 
-.sidebar {
-  //background-color: yellow;
-}
     </style>
 </style>
 
@@ -143,25 +37,13 @@ h1 {
 <body translate="no" >
   <h1><code>/ Gran Hermano /</code></h1>
 
-<div class="row wrapper">
-  <div class="col-xs-9">
-    <div class="row">
-      <div class="col-xs-12">
+<div class="col-md-8">
         <div class="content"><iframe src="https://player.twitch.tv/?channel=largirucho&parent=www.example.com" frameborder="0" allowfullscreen="true" scrolling="no" height="720" width=100%"></iframe></div>
-      </div>
-      <div class="col-xs-12">
-        <div class="content">Content</div>
-      </div>
-    </div>
-  </div>
-  <div class="col-xs-3">
-    <div class="sidebar">
+</div>
+<div class="col-md-4">
 <iframe loading="lazy" id="twitch-chat-embed" class="twitch" src="https://www.twitch.tv/embed/futbolparatodosonline/chat?parent=htmledit.squarefree.com&amp;darkpopout" width="100%" height="480"></iframe></div>
-  </div>
 </div>
 
-
-<blockquote class="info">Con el apoyo de: <a href="https://largirucho.com/">Largirucho</a></blockquote>
 
 
 </body>
